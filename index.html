@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
     <style>
         body{
             margin: 0px;
@@ -12,6 +15,7 @@
             height: 4544px;
             background-image: url("1.jpg");
             color: white;
+            font-family: 'Ubuntu', sans-serif;
         }
         .left{
             display: inline-block;
@@ -20,6 +24,12 @@
             left: 32px;
             top: 0px;
             margin: 20px auto;
+        }
+        .left img{
+            width: 126px;
+        }
+        .left div{
+            text-align: center;
         }
           .mid{
             display: block;
@@ -44,25 +54,67 @@
         .navbar li a{
             color: white;
             text-decoration: none;
+            padding: 14px 8px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+           text-decoration: underline;
+           color: yellow;
+        }
+        .btn{
+            margin: 0px 10px;
+            padding: 5px 15px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: yellow;
+        }
+        .container{
+            border: 1px solid red;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 30px;
+
         }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="left">
-I am left
+         <img src="https://cdn-icons-png.flaticon.com/512/563/563777.png" alt="">
+         <div>Junior Club</div>
         </div>
         <div class="mid">
        <ul class="navbar">
-        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Workout Center</a></li>
         <li><a href="#">Contact</a> </li>
        </ul>
         </div>
         <div class="right">
-i am right
+            <button class="btn">☎️</button><button class="btn">📧</button>
         </div>
     </header>
+    <div class="container">
+        <h1>We Provide Best Gym Facility in Delhi</h1>
+           <form>
+            <div class="form-group">
+                <input type="text" placeholder="Enter The Name" />
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Enter The Email" />
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter The Age" />
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter The City" />
+            </div>
+             <button class="btn">Submit</button>
+           </form>
+    </div>
 </body>
 </html>
