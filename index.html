@@ -8,83 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
-    <style>
-        body{
-            margin: 0px;
-            padding: 0px;
-            height: 4544px;
-            background-image: url("1.jpg");
-            color: white;
-            font-family: 'Ubuntu', sans-serif;
-        }
-        .left{
-            display: inline-block;
-            border: 1px solid red;
-            position: absolute;
-            left: 32px;
-            top: 0px;
-            margin: 20px auto;
-        }
-        .left img{
-            width: 126px;
-        }
-        .left div{
-            text-align: center;
-        }
-          .mid{
-            display: block;
-            width: 33%;
-            margin: 20px auto;
-            border: 1px solid rgb(0, 255, 0);
-        }
-          .right{
-            position: absolute;
-            right: 32px;
-            top: 0px;
-            display: inline-block;
-            border: 2px solid yellow;
-            margin: 20px auto;
-        }
-        .navbar{
-            display: inline-block;
-        }
-        .navbar li {
-            display: inline-block;
-        }
-        .navbar li a{
-            color: white;
-            text-decoration: none;
-            padding: 14px 8px;
-        }
-        .navbar li a:hover, .navbar li a.active{
-           text-decoration: underline;
-           color: yellow;
-        }
-        .btn{
-            margin: 0px 10px;
-            padding: 5px 15px;
-            border: 2px solid gray;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-        .btn:hover{
-            background-color: yellow;
-        }
-        .container{
-            border: 1px solid red;
-            margin: 106px 80px;
-            padding: 75px;
-            width: 33%;
-            border-radius: 30px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <div class="left">
          <img src="https://cdn-icons-png.flaticon.com/512/563/563777.png" alt="">
-         <div>Junior Club</div>
+         <div><h2>Junior Club</h2></div>
         </div>
         <div class="mid">
        <ul class="navbar">
@@ -99,7 +29,7 @@
         </div>
     </header>
     <div class="container">
-        <h1>We Provide Best Gym Facility in Delhi</h1>
+        <h1>We Provide Best Gym Facility</h1>
            <form>
             <div class="form-group">
                 <input type="text" placeholder="Enter The Name" />
@@ -111,7 +41,7 @@
                 <input type="text" placeholder="Enter The Age" />
             </div>
             <div class="form-group">
-                <input type="text" placeholder="Enter The City" />
+                <input type="text" placeholder="Enter The Gender" />
             </div>
              <button class="btn">Submit</button>
            </form>

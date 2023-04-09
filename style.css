@@ -1,0 +1,101 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 45px;
+    background-image: url("1.jpg");
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+.left{
+    display: inline-block;
+    /* border: 1px solid red; */
+    position: absolute;
+    left: 38px;
+    top: 0px;
+    margin: 3px auto;
+}
+.left img{
+    width: 126px;
+}
+
+.left div:hover{
+    color: yellow;
+}
+  .mid{
+    display: block;
+    width: 33%;
+    margin: 29px auto;
+    /* border: 1px solid rgb(0, 255, 0); */
+}
+  .right{
+    position: absolute;
+    right: 32px;
+    top: 10px;
+    display: inline-block;
+    /* border: 2px solid yellow; */
+    margin: 20px auto;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li {
+    display: inline-block;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 8px;
+}
+.navbar li a:hover, .navbar li a.active{
+   text-decoration: underline;
+   color: yellow;
+}
+.btn{
+    margin: 0px 10px;
+    padding: 0px 1px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 40px;
+}
+.btn:hover{
+    transition: 200ms all ease-out;
+    background-color: yellow;
+    border: 0;
+    font-size:  42px;;
+}
+.container{
+    /* border: 1px solid red; */
+    margin: 120px 90px;
+    padding: 16px;
+    width: 40%;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 2px rgb(229, 200, 74);
+}
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 360px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 15px;
+     font-family: 'Ubuntu', sans-serif;
+     margin: 12px auto;
+}
+.container button{
+display: block;
+width: 74%;
+margin: 20px auto;
+}
+.container button:hover{
+background-color: gray;
+
+}
+.container h1{
+text-align: center;
+}
+.container h1:hover{
+transition: 200ms all ease-in-out;
+color: yellow;
+}
